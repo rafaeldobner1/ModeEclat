@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeEclat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .produto {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        .produto a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="roupas.html">Roupas</a></li>
+                    <li><a href="sapatos.html">Sapatos</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html">ModeEclat</a>
+        </div>
+        <div class="header-icons">
+            <div class="user-icon">
+                <a href="cadastro.html">
+                    <img src="imagens-svg/person.svg" alt="Usuário">
+                </a>
+            </div>
+            <div class="shopping-bag">
+                <a href="cadastro.html">
+                    <img src="imagens-svg/sacola.svg" alt="Sacola de Compras">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <img src="imagens-svg/main.svg" alt="Imagem de fundo">
+            <h1>Estilo Exclusivo</h1>
+            <p>Descubra as últimas tendências com marcas de luxo.</p>
+            <button id="shop-now"><a href="#produtos" style="color: white; text-decoration: none;">Comprar Agora</a></button>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="produto">
+                <a href="camisa.html">
+                    <div class="favorite-icon" onclick="toggleFavorite(this)">
+                        <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                    </div>
+                    <img src="imagens-svg/camisamasc1.svg" alt="Comme Des Garçons Play">
+                    <h3>Camiseta Comme Des Garçons Play</h3>
+                    <p>R$ 999,90</p>
+                </a>
+            </div>
+
+            <div class="produto">
+                <a href="acessorio.html">
+                    <div class="favorite-icon" onclick="toggleFavorite(this)">
+                        <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                    </div>
+                    <img src="imagens-svg/acessoriomasc3.svg" alt="Produto 2">
+                    <h3>Boné</h3>
+                    <p>R$ 799,90</p>
+                </a>
+            </div>
+
+            <div class="produto">
+                <a href="tenis.html">
+                    <div class="favorite-icon" onclick="toggleFavorite(this)">
+                        <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                    </div>
+                    <img src="imagens-svg/tenismasc1.svg" alt="Produto 3">
+                    <h3>Tenis</h3>
+                    <p>R$ 699,90</p>
+                </a>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/acessoriomasc2.svg" alt="Produto 4">
+                <h3>Cinto</h3>
+                <p>R$ 499,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/camisamasc2.svg" alt="Produto 5">
+                <h3>Camiseta</h3>
+                <p>R$ 599,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/tenismasc2.svg" alt="Produto 6">
+                <h3>Tenis</h3>
+                <p>R$ 899,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/acessoriomasc1.svg" alt="Produto 7">
+                <h3>Óculos</h3>
+                <p>R$ 749,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/camisamasc3.svg" alt="Produto 8">
+                <h3>Camiseta</h3>
+                <p>R$ 349,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/tenismasc3.svg" alt="Produto 9">
+                <h3>Tenis</h3>
+                <p>R$ 299,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/acessoriomasc4.svg" alt="Produto 10">
+                <h3>Carteira</h3>
+                <p>R$ 699,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/tenismasc4.svg" alt="Produto 11">
+                <h3>Tenis</h3>
+                <p>R$ 999,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/camisamasc4.svg" alt="Produto 12">
+                <h3>Camiseta</h3>
+                <p>R$ 1.199,90</p>
+            </div>
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/acessoriomasc1.svg" alt="Produto 7">
+                <h3>Óculos</h3>
+                <p>R$ 749,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/camisamasc3.svg" alt="Produto 8">
+                <h3>Camiseta</h3>
+                <p>R$ 349,90</p>
+            </div>
+
+            <div class="produto">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    <img src="imagens-svg/heart.svg" alt="Favoritar" />
+                </div>
+                <img src="imagens-svg/tenismasc3.svg" alt="Produto 9">
+                <h3>Tenis</h3>
+                <p>R$ 299,90</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 ModeEclat - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

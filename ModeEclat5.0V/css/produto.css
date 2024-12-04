@@ -1,0 +1,125 @@
+#produto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.produto-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.produto-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.produto-info {
+    margin-left: 30px;
+    max-width: 50%;
+}
+
+.produto-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.produto-info .price {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto-info .descricao {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.produto-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.produto-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.produto-info ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .produto-detail {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .produto-info {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .produto-info h1 {
+        font-size: 2em;
+    }
+
+    .produto-info .price {
+        font-size: 1.2em;
+    }
+
+    .produto-info .descricao {
+        font-size: 1em;
+    }
+
+    .produto-info h3 {
+        font-size: 1.1em;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
